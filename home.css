@@ -1,0 +1,198 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffffd7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    background-color: #008a4aa4;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    position: sticky;
+}
+.header-logo {
+    width: 100px; 
+}
+
+h2 span {
+    color: #fff;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.left-column,
+.right-column {
+    width: 48%;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #008A49;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #008a4a93;
+}
+
+.custom-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.custom-alert .close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.unfilled-field {
+    border: 2px solid red;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.current-trade-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.trade-statistics,
+.profit-statistics,
+.date-filter-container,
+.filtered-trades {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 20px;
+}
+
+.right-column {
+    margin-left: 20px;
+}
+
+.filtered-trades {
+    margin-top: 20px;
+    margin-left: 0px;
+    width: 93%;
+
+}
+
+.date-filter-container,
+.filtered-trades {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.section-toggle-container {
+    display: flex;
+    margin-right: 20px;
+
+}
+
+.form-navigation {
+    display: flex;
+    margin-top: 20px;
+}
+
+.toggle-item {
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.toggle-item:hover {
+    background-color: #008a4ac4;
+}
+
+.active {
+    text-decoration: underline;
+     
+}
+
+.trade-statistics p span,
+.profit-statistics p span,
+.all-trades .trade-statistics p span {
+    color: #3445db; 
+}
+
+.all-trades .trade-statistics p span,
+.all-trades .profit-statistics p span {
+    color: #10a54e;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    color: #777;
+    padding: 10px;
+    width: 100%;
+    background-color: #ecf0f1;
+}
